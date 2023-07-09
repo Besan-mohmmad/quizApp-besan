@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="start-scren" id="start">
+        <h1>Quiz Website</h1>
+        <p>This is a Quiz Game , It is a game to test knowledge about your skills in javascript , In this Quiz App ,.</p>
+        <p>Click the "Start Game" button to begin.</p>
+        <input type="text" class="name" id="fname" placeholder="Your name..">
+        <h4 id ="Errorname" class="validation"></h4>
+        <section class="button">
+            <button class="btn" id="startBtn"> Start Quiz </button>
+            <button class="btn" id="Leaderbtn" >Leader Board</button>   
+     </section>
+     </section>
+
+     
+
+
+     <section id="container" class="container">
+            <section class="header">
+                <div class="timer">
+                    <span id="timer">1/10</span>
+                </div>
+              
+            </section>
+            <section class="question">
+                <h2 id="question">Question text ?</h2>
+             <ul>
+          <li class="choices"> 
+                <input type="radio" name="answer"  id="a" class="answer">
+                <label for="a" class="choices-text" id="txt_a">choice 1</label>
+            </li>
+            <li class="choices">
+                <input type="radio" name="answer"   id="b" class="answer">
+                <label for="b" class="choices-text" id="txt_b">choice 2</label>
+            </li>
+            <li class="choices">
+                <input type="radio" name="answer"  id="c" class="answer">
+                <label for="c" class="choices-text" id="txt_c">choice 3</label>
+            </li>
+           <li class="choices"> 
+            <input type="radio" name="answer"  id="d" class="answer">
+            <label for="d" class="choices-text" id="txt_d"> choice 4</label>
+           </li>
+            </ul>
+            <button id="next" class="Start-btn">Next</button>
+        </section>
+        </section>
+
+
+
+
+
+    <section id="leaderboard">
+        <h2>Leaderboard</h2>
+       <table id="leaderboard-table">
+         <thead>
+           <tr>
+             <th>User Name</th>
+             <th>Score</th>
+           </tr>
+         </thead>
+         <tbody id="leaderboard-body">
+         </tbody>
+       </table>
+       <button class="Start-btn" id= "reload" onclick="location.reload()">Reload</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
+
