@@ -181,7 +181,7 @@ next.addEventListener('click' , () => {
 
         } 
         else {
-            resultScore(userNameInput.value, score);       
+            resultScore(fname.value, score);       
             start.style.display ='none';
             container.style.display='none';
             leaderboard.style.display ="flex";
